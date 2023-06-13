@@ -4,6 +4,7 @@ FROM ubuntu:latest
 RUN apt update && apt install -y haskell-stack && stack update && \
     stack upgrade --binary-only && stack setup --install-ghc
 
-# install hmatrix (Numeric.LinearAlgebra)
+# install hmatrix (Numeric.LinearAlgebra) and MissingH (Data.CSV)
 RUN apt update && apt install -y liblapack-dev liblapack-doc && \
-    stack install hmatrix
+    stack update & stack install hmatrix MissingH
+
