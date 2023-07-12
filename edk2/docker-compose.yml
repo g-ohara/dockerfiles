@@ -1,0 +1,9 @@
+services:
+  edk2:
+    build:
+      dockerfile: Dockerfile
+    container_name: edk2
+    working_dir: /root
+    volumes:
+      - ./:/root
+    tty: true
