@@ -1,0 +1,14 @@
+services:
+  latex:
+    image: genjiohara/latex
+    container_name: docker-latex
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/root
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      - DISPLAY=$DISPLAY
+    working_dir: /root/
+    tty: true
