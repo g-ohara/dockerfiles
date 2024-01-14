@@ -1,18 +1,14 @@
-FROM python:3
-USER root
+FROM ubuntu
 
-RUN apt-get update
-RUN apt-get -y install locales && \
-    localedef -f UTF-8 -i ja_JP ja_JP.UTF-8
-ENV LANG ja_JP.UTF-8
-ENV LANGUAGE ja_JP:ja
-ENV LC_ALL ja_JP.UTF-8
-ENV TZ JST-9
-ENV TERM xterm
+WORKDIR /root/workspace
 
-RUN apt-get install -y vim less
-RUN pip install --upgrade pip
-RUN pip install --upgrade setuptools
+# Install Git and clone dotfiles.
+RUN apt update && apt install -y git sudo && \
+git clone https://github.com/G-Ohara/dotfiles.git /root/dotfiles && \
+cd /root/dotfiles && ./install_links.sh
 
-RUN python -m pip install jupyterlab
+# Install Python3.
+RUN cd /root/dotfiles/scripts/apps && ./python.sh
 
+# Install Neovim.
+RUN cd /root/dotfiles/scripts/apps/ && ./neovim.sh

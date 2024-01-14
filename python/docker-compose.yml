@@ -1,0 +1,14 @@
+services:
+  python:
+    image: genjiohara/python
+    container_name: docker-python
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/root/workspace
+      - /tmp/.X11-unix:/tmp/.X11-unix
+    environment:
+      - DISPLAY=$DISPLAY
+    working_dir: /root/
+    tty: true
