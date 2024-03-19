@@ -14,20 +14,22 @@ The image 'gcc' includes packages below:
   - [flawfinder](https://github.com/david-a-wheeler/flawfinder)
   - [uncrustify](https://github.com/uncrustify/uncrustify)
 * [NeoVim](https://neovim.io/)
-* [my dotfiles](https://github.com/G-Ohara/dotfiles)
+* [my dotfiles](https://github.com/g-ohara/dotfiles)
 
 ## gnuplot
 The image 'gnuplot' includes packages below:
 * [gnuplot](https://gnuplot.sourceforge.net/)
 * gnuplot-x11
 
-## haskell-stack
-The image 'haskell-stack' includes packages below:
+## haskell
+The image 'haskell' includes packages below:
 * [stack](https://docs.haskellstack.org/en/stable/)
 * [ghc](https://www.haskell.org/ghc/)
 * some haskell libraries
   - [hmatrix](https://hackage.haskell.org/package/hmatrix)
   - [MissingH](https://hackage.haskell.org/package/MissingH)
+* [NeoVim](https://neovim.io/)
+* [my dotfiles](https://github.com/g-ohara/dotfiles)
 
 ## latex
 The image 'latex' includes packages below:
@@ -35,7 +37,7 @@ The image 'latex' includes packages below:
 * [xdg-utils](https://www.freedesktop.org/wiki/Software/xdg-utils/)
 * [evince](https://wiki.gnome.org/Apps/Evince)
 * [NeoVim](https://neovim.io/)
-* [my dotfiles](https://github.com/G-Ohara/dotfiles)
+* [my dotfiles](https://github.com/g-ohara/dotfiles)
 
 ## python
 The image 'python' includes packages below:
@@ -49,7 +51,7 @@ The image 'python' includes packages below:
   - [pyright](https://github.com/microsoft/pyright)
   - [ruff](https://github.com/astral-sh/ruff)
 * [NeoVim](https://neovim.io/)
-* [my dotfiles](https://github.com/G-Ohara/dotfiles)
+* [my dotfiles](https://github.com/g-ohara/dotfiles)
 
 ## texlive-full
 The image 'texlive-full' includes packages below:

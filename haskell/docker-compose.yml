@@ -1,0 +1,11 @@
+services:
+  haskell:
+    image: genjiohara/haskell
+    container_name: dockerfiles-haskell
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ~/.gitconfig:/root/.gitconfig
+      - ~/.ssh:/root/.ssh
+    tty: true
