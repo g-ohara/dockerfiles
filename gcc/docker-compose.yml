@@ -1,8 +1,0 @@
-services:
-  gcc:
-    image: genjiohara/gcc
-    container_name: Docker-gcc
-    build:
-      context: .
-      dockerfile: Dockerfile
-    tty: true
