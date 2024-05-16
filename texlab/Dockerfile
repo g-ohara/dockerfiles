@@ -1,2 +1,3 @@
 FROM rust
 RUN cargo install --git https://github.com/latex-lsp/texlab --locked
+RUN apt update && apt install -y texlive-full
